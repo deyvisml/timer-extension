@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "My counter 7w",
+  "version": "1.0.1",
+
+  "action": {
+    "default_icon": {
+      "16": "icons/icon.png",
+      "32": "icons/icon.png",
+      "48": "icons/icon.png",
+      "128": "icons/icon.png"
+    },
+    "default_popup": "popup/popup.html"
+  },
+  "description": "This extension show a counter from 0",
+  "icons": {
+    "16": "icons/icon.png",
+    "32": "icons/icon.png",
+    "48": "icons/icon.png",
+    "128": "icons/icon.png"
+  },
+  "options_page": "options/options.html",
+  "permissions": ["storage", "alarms", "notifications"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
